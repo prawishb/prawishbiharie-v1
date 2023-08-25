@@ -38,20 +38,20 @@ const HomePage = (props: Props) => {
       <main className="py-20 flex flex-col gap-24">
         <Section id="about" className="flex flex-col gap-4">
           <p>
-            Hello, I'm Prawish Biharie, a seasoned professional who seamlessly
-            transitioned from the world of electrical engineering to embrace my
-            true passion for software engineering. With over 3 years of
-            dedicated experience in software engineering, I've honed my skills
-            and insights to craft innovative solutions that bridge the gap
-            between hardware and software realms.
+            Hello, I&apos;m Prawish Biharie, a seasoned professional who
+            seamlessly transitioned from the world of electrical engineering to
+            embrace my true passion for software engineering. With over 3 years
+            of dedicated experience in software engineering, I&apos;ve honed my
+            skills and insights to craft innovative solutions that bridge the
+            gap between hardware and software realms.
           </p>
 
           <p>
-            Having started my career in electrical engineering, I've carried
-            forward the analytical mindset and problem-solving prowess that
-            defined my earlier experiences. This unique blend of disciplines
-            allows me to approach software development from a fresh perspective,
-            often uncovering novel ways to tackle challenges.
+            Having started my career in electrical engineering, I&apos;ve
+            carried forward the analytical mindset and problem-solving prowess
+            that defined my earlier experiences. This unique blend of
+            disciplines allows me to approach software development from a fresh
+            perspective, often uncovering novel ways to tackle challenges.
           </p>
 
           <p>
@@ -118,9 +118,9 @@ const HomePage = (props: Props) => {
               <div className="flex flex-col gap-2">
                 <h3 className="text-zinc-100">Personal Website</h3>
                 <p className="text-sm line-clamp-3">
-                  "THIS" is it! I am proud to present my personal website
-                  created using the dynamic <strong>Next.js</strong> framework
-                  and the versatile <strong>Tailwind CSS</strong>.
+                  &quot;THIS&quot; is it! I am proud to present my personal
+                  website created using the dynamic <strong>Next.js</strong>{" "}
+                  framework and the versatile <strong>Tailwind CSS</strong>.
                 </p>
                 <ul className="flex text-xs gap-2">
                   <li className="bg-blue-400 text-blue-900 px-2 py-1 rounded">
@@ -198,10 +198,10 @@ const HomePage = (props: Props) => {
 
         <Section id="contact">
           <p>
-            I'm actively seeking a web developer role that challenges me to
-            grow, collaborate, and make a meaningful impact. If you're looking
-            for a dedicated developer ready to bring fresh ideas to the table,
-            let's connect and explore the possibilities together.
+            I&apos;m actively seeking a web developer role that challenges me to
+            grow, collaborate, and make a meaningful impact. If you&apos;re
+            looking for a dedicated developer ready to bring fresh ideas to the
+            table, let&apos;s connect and explore the possibilities together.
           </p>
           <h5 className="font-medium text-zinc-200 mt-4">
             The best way to reach me is by email at{" "}
