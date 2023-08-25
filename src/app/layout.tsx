@@ -23,7 +23,7 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${poppins.className} antialiased min-h-screen bg-zinc-900 text-zinc-400`}
+        className={`${inter.className} antialiased min-h-screen bg-zinc-900 text-zinc-400`}
       >
         {children}
       </body>
