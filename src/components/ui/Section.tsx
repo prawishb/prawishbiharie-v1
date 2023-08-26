@@ -1,5 +1,6 @@
+import { HTMLProps } from "react";
+
 import { cn } from "@/lib/utils";
-import { HTMLProps, ReactNode } from "react";
 
 interface Props extends HTMLProps<HTMLDivElement> {
   title?: string;

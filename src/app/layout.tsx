@@ -1,12 +1,8 @@
 import { ReactNode } from "react";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Poppins, Inter } from "next/font/google";
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
+import { Inter } from "next/font/google";
+import { ActiveSectionProvider } from "@/context/active-section-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,9 +19,9 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} antialiased min-h-screen bg-zinc-900 text-zinc-400`}
+        className={`${inter.className} antialiased min-h-screen bg-gradient-to-b from-zinc-900 to-zinc-950 text-zinc-400`}
       >
-        {children}
+        <ActiveSectionProvider>{children}</ActiveSectionProvider>
       </body>
     </html>
   );

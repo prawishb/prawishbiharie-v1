@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import Navbar from "@/components/Navbar";
 import SectionAbout from "@/components/SectionAbout";
 import SectionSkills from "@/components/SectionSkills";
@@ -12,27 +10,20 @@ type Props = {};
 
 const HomePage = (props: Props) => {
   return (
-    <div className="relative max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2">
-      {/* <Navbar /> */}
-      <header className="py-8 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:flex-col lg:justify-between lg:py-20">
+    <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2">
+      <header className="relative py-20 max-w-lg sm:pr-4 sm:sticky sm:top-0 sm:flex sm:max-h-screen sm:flex-col sm:justify-between ">
         <div className="flex flex-col gap-4">
           <h1 className="text-4xl font-bold text-zinc-50">Prawish Biharie</h1>
           <h2 className="font-medium tracking-tight text-zinc-100">
             Electrical engineer & software enthusiast.
           </h2>
           <p className="max-w-md leading-normal">
-            I build accessible, inclusive products and digital experiences for
-            the web.
+            Electrical engineer turned software pro. Bridging hardware-software
+            gap, embracing innovation through continuous learning.
           </p>
-
-          <Link
-            href="#"
-            target="_blank"
-            className="inline-block w-fit py-2 px-4 rounded bg-blue-600 text-blue-50 transition-all ease-in-out duration-300"
-          >
-            Download My Resume
-          </Link>
         </div>
+
+        <Navbar />
 
         <SocialMedia />
       </header>

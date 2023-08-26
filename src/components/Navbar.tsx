@@ -1,27 +1,40 @@
 "use client";
 
-import { navLinks } from "@/lib/data";
 import Link from "next/link";
-import { useState } from "react";
+
+import { navLinks } from "@/lib/data";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 type Props = {};
 
 const Navbar = (props: Props) => {
-  const [activeSection, setActiveSection] = useState<string>("About");
+  const { activeSection, setActiveSection } = useActiveSectionContext();
+
+  // TODO: activeSection styling not being applied
 
   return (
-    <nav
-      className="hidden lg:fixed lg:top-0 z-50"
-      aria-label="In-page jump links"
-    >
-      <ul className="max-w-md flex gap-4">
+    <nav className="hidden md:block" aria-label="In-page jump links">
+      <ul className="max-w-md flex-col space-y-4">
         {navLinks.map((link, index) => (
           <li key={index}>
             <Link
-              className="group flex items-center px-3 py-2 bg-zinc-600 "
+              className="group flex items-center"
               href={link.hashPath}
+              onClick={() => setActiveSection(link.name)}
             >
-              <span className="text-xs font-bold uppercase tracking-widest text-zinc-500 group-hover:text-zinc-200 group-focus-visible:text-zinc-200">
+              <span
+                className={`mr-4 h-px w-8 bg-zinc-600 transition-all group-hover:bg-zinc-100 ${
+                  link.name === activeSection ? "bg-zinc-100 w-16" : ""
+                }`}
+              ></span>
+
+              <span
+                className={`text-xs font-bold uppercase tracking-widest group-hover:text-zinc-100 ${
+                  link.name === activeSection
+                    ? "text-zinc-100"
+                    : "text-zinc-400"
+                }`}
+              >
                 {link.name}
               </span>
             </Link>

@@ -7,7 +7,7 @@ type Props = {
 
 const Experience = ({ experience }: Props) => {
   return (
-    <article className="bg-zinc-800 p-4 rounded flex flex-row gap-4">
+    <article className="bg-zinc-800 p-4 rounded flex flex-col lg:flex-row gap-4">
       <div className="w-40 h-full flex-shrink-0 text-sm">
         <p>{experience.date}</p>
       </div>
