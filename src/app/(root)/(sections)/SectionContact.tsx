@@ -1,12 +1,11 @@
 import Link from "next/link";
-
-import Section from "./ui/Section";
+import ObservableSection from "@/components/ObservableSection";
 
 type Props = {};
 
 const SectionContact = (props: Props) => {
   return (
-    <Section id="contact" title="Contact">
+    <ObservableSection id="Contact" title="Contact">
       <p>
         {`I'm actively seeking a web developer role that challenges me to grow,
         collaborate, and make a meaningful impact. If you're looking for a
@@ -19,7 +18,7 @@ const SectionContact = (props: Props) => {
           prawishbiharie@gmail.com
         </Link>
       </h5>
-    </Section>
+    </ObservableSection>
   );
 };
 

@@ -27,7 +27,7 @@ const SocialMedia = (props: Props) => {
       <li className="mr-5 text-xs">
         <Link
           className="block hover:text-zinc-100"
-          href="#"
+          href="https://www.instagram.com/biharie.p/"
           target="_blank"
           rel="noreferrer"
         >

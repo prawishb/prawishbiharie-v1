@@ -1,13 +1,12 @@
-import Section from "./ui/Section";
-import Experience from "./Experience";
-
-import { experiences } from "@/lib/data";
+import ObservableSection from "@/components/ObservableSection";
+import Experience from "@/components/Experience";
+import { experiences } from "@/data";
 
 type Props = {};
 
 const SectionExperience = (props: Props) => {
   return (
-    <Section id="experience" title="Experience">
+    <ObservableSection id="Experience" title="Experience" thresholdAmount={1}>
       <ul className="flex flex-col gap-4">
         {experiences.map((experience, index) => (
           <li key={index}>
@@ -15,7 +14,7 @@ const SectionExperience = (props: Props) => {
           </li>
         ))}
       </ul>
-    </Section>
+    </ObservableSection>
   );
 };
 

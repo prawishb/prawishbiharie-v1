@@ -2,14 +2,17 @@
 
 import { ReactNode, createContext, useContext, useState } from "react";
 
-import { navLinks } from "@/lib/data";
+import { inPageNavigation } from "@/data";
 
 const useActiveSectionStore = () => {
-  const [activeSection, setActiveSection] = useState<SectionName>("About");
+  const [activeSection, setActiveSection] = useState<string>("About");
+  const [timeSectionLinkClick, setTimeSectionLinkClick] = useState<number>(0);
 
   return {
     activeSection,
     setActiveSection,
+    timeSectionLinkClick,
+    setTimeSectionLinkClick,
   };
 };
 
@@ -17,7 +20,7 @@ export const ActiveSectionContext = createContext<ReturnType<
   typeof useActiveSectionStore
 > | null>(null);
 
-type SectionName = (typeof navLinks)[number]["name"];
+export type SectionName = (typeof inPageNavigation)[number]["name"];
 type Props = {
   children: ReactNode;
 };

@@ -1,11 +1,11 @@
-import Section from "./ui/Section";
+import ObservableSection from "@/components/ObservableSection";
 
 type Props = {};
 
 const SectionSkills = (props: Props) => {
   return (
-    <Section id="skills" title="Skills">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <ObservableSection id="Skills" title="Skills">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="">
           <h5 className="text-zinc-100 font-semibold text-lg mb-2">
             Languages
@@ -46,7 +46,7 @@ const SectionSkills = (props: Props) => {
           </ul>
         </div>
       </div>
-    </Section>
+    </ObservableSection>
   );
 };
 

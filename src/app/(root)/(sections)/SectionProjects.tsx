@@ -1,13 +1,12 @@
-import Section from "./ui/Section";
-import Project from "./Project";
-
-import { projects } from "@/lib/data";
+import ObservableSection from "@/components/ObservableSection";
+import Project from "@/components/Project";
+import { projects } from "@/data";
 
 type Props = {};
 
 const SectionProjects = (props: Props) => {
   return (
-    <Section id="projects" title="Projects">
+    <ObservableSection id="Projects" title="Projects">
       <ul className="flex flex-col gap-4">
         {projects.map((project, index) => (
           <li key={index}>
@@ -15,7 +14,7 @@ const SectionProjects = (props: Props) => {
           </li>
         ))}
       </ul>
-    </Section>
+    </ObservableSection>
   );
 };
 

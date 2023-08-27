@@ -9,7 +9,7 @@ type Props = {
 const Project = ({ project }: Props) => {
   return (
     <article className="bg-zinc-800 p-4 rounded flex flex-col lg:flex-row gap-4">
-      <div className="relative w-full h-40 lg:w-40 lg:h-24 rounded overflow-hidden flex-shrink-0">
+      <div className="relative w-full h-48 lg:w-40 lg:h-24 rounded overflow-hidden flex-shrink-0">
         {project.imageUrl === "" ? (
           <div className="w-full h-full bg-zinc-700 flex items-center justify-center text-sm text-">
             No Image
@@ -25,7 +25,7 @@ const Project = ({ project }: Props) => {
       </div>
       <div className="flex flex-col gap-4">
         <h3 className="text-zinc-100">{project.title}</h3>
-        <p className="text-sm line-clamp-3">{project.description}</p>
+        <p className="text-sm">{project.description}</p>
         <ul className="flex text-xs gap-2">
           {project.tags ? (
             <>

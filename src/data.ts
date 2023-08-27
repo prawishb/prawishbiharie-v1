@@ -1,4 +1,4 @@
-export const navLinks = [
+export const inPageNavigation = [
   {name: "About", hashPath: "#about"},
   {name: "Skills", hashPath: "#skills"},
   {name: "Projects", hashPath: "#projects"},
@@ -20,6 +20,13 @@ export const projects: Project[] = [
     description:
       "I am proud to present my personal website created using the dynamic Next.js framework, Tailwind CSS and Sanity.io.",
     tags: ["Next.js 13", "Tailwindcss", "React", "Sanity.io"],
+  },
+  {
+    imageUrl: "",
+    title: "API Endpoint Tester (In development)",
+    description:
+      "A comprehensive platform that equips developers with powerful tools to simplify testing, documenting, and managing APIs. This project aims to streamline the API lifecycle, offering a seamless user experience for efficient development and integration.",
+    tags: ["React", "Tailwindcss" ],
   },
 ];
 
