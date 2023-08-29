@@ -8,7 +8,7 @@ export const inPageNavigation = [
 
 export const projects: Project[] = [
   {
-    imageUrl: "/personal-website.png",
+    imageUrl: "/personal-website-v3.png",
     title: "Personal Website",
     description:
       "THIS is it! I am proud to present my personal website created using the dynamic Next.js framework and the versatile Tailwind CSS.",
