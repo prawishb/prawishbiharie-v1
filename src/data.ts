@@ -16,6 +16,13 @@ export const projects: Project[] = [
   },
   {
     imageUrl: "",
+    title: "InfinitySphere",
+    description:
+      "Built with the latest web development frameworks, this ecommerce platform offers a responsive and fluid user experience across devices. Through scalable architecture, it ensures smooth navigation even during peak traffic. The integration of secure payment gateways and robust backend systems guarantees a seamless transaction process.",
+    tags: ["Next.js 13", "Tailwindcss", "React"],
+  },
+  {
+    imageUrl: "",
     title: "BlogIO",
     description:
       "I am proud to present my personal website created using the dynamic Next.js framework, Tailwind CSS and Sanity.io.",
